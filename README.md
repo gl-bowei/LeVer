@@ -22,7 +22,7 @@ Together, these components allow contracts to be generated, verified, attacked, 
 
 ## Framework Overview
 
-![]()
+![](Framework_new_01.png)
 
 At a high level, LeVer consists of four roles:
 
