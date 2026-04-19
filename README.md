@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <b>Bowei Zhang</b>, Hanbing Liu, Qixin Tian, Siyu Chen, Ziyuan Wang, Qi Qi
+  Bowei Zhang, Hanbing Liu, Qixin Tian, Siyu Chen, Ziyuan Wang, Qi Qi
 </p>
 
 <p align="center">
@@ -73,14 +73,17 @@ At a high level, LeVer is built around four collaborative roles:
 
 ---
 
-## Citation
+## Main Results
 
-If you find this work useful, please cite:
+LeVer consistently improves both **trustworthiness assurance** and **standard correctness** across frontier foundation models.
 
-```bibtex
-@inproceedings{zhang2026lever,
-  title     = {Towards Trustworthy Smart Contract Synthesis: A Multi-Agent Framework with Lean-Based Verification},
-  author    = {Bowei Zhang and Hanbing Liu and Qixin Tian and Siyu Chen and Ziyuan Wang and Qi Qi},
-  booktitle = {Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (ACL 2026)},
-  year      = {2026}
-}
+<p align="center">
+  <img src="main_results.png" alt="Main results on the Smart Contract Generation Benchmark" width="95%">
+</p>
+
+**Highlights:**
+- LeVer substantially reduces the **Attack Success Rate (AR)** compared with both direct generation and FSM-based baselines.
+- It consistently improves **Verification Rate (VR)** and the **average number of verified properties**, showing stronger formal assurance.
+- These gains also translate into better practical correctness, with improved **Slither** and **Foundry** pass rates.
+- Ablation results further show that the **Verifier** and **Attacker** play complementary roles: the verifier strengthens formal guarantees, while the attacker exposes hard-to-prove dynamic vulnerabilities and feeds them back into refinement.
+
